@@ -57,16 +57,20 @@ It shows the use of multiple FreeRTOS tasks, message queues, and GPIO handling o
 ## Project Structure
 
 ```
-.
-├── src/
-│   ├── main.c        # Application entry point
-│   ├── dht22.c       # DHT22 sensor driver
-│   ├── dht22.h
-│   └── freertos_app.c # Task creation and scheduling
-├── include/
-│   └── config.h      # Pin mappings and configuration
-├── README.md
-└── CMakeLists.txt / platformio.ini
+esp32-freertos-dht22-tasks/
+├── dht22-messagequeue
+│   ├── include
+│   │   └── README
+│   ├── lib
+│   │   └── README
+│   ├── platformio.ini
+│   ├── src
+│   │   └── main.cpp
+│   └── test
+│       └── README
+├── LICENSE
+└── README.md
+
 ```
 
 ## Build & Flash
@@ -89,9 +93,9 @@ idf.py monitor
 ```
 [Heartbeat] Toggled pin at 200 ms
 [Fastbeat] Toggled pin at 1 ms
-[DHT22] Temperature: 27.4 °C, Humidity: 61.2 %
-[DHT22] Temperature: 27.3 °C, Humidity: 61.4 %
-[Boot Button] Press detected
+[DHT22] 1: 61.2 % 27.4 °C
+[DHT22] 2: 61.4 % 27.3 °C
+[Boot Button] "Press detected"
 ```
 
 ## Future Improvements
