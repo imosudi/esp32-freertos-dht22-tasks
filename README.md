@@ -38,7 +38,7 @@ It shows the use of multiple FreeRTOS tasks, message queues, and GPIO handling o
 
 | Component | ESP32 Pin |
 |-----------|-----------|
-| DHT22 Data | GPIO (configurable) |
+| DHT22 Data |  4 #GPIO (configurable) |
 | Heartbeat LED | GPIO (configurable) |
 | Fastbeat LED | GPIO (configurable) |
 | Boot Button | Built-in (GPIO0) |
