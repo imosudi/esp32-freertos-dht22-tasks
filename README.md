@@ -107,4 +107,4 @@ idf.py monitor
 
 ## License
 
-This project is released under the MIT License.
+This project is released under the BSD-3-Clause license.
